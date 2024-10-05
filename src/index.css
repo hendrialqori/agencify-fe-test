@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #E75A7C;
+}
+
+@layer components {
+  .center-flex {
+    @apply flex items-center justify-center
+  }
+
+  .container {
+    @apply  max-w-[1920px] mx-auto px-5 md:px-14 xl:px-28
+  }
+}
+
+.popover-shadow {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px 2px 17px;
+}
