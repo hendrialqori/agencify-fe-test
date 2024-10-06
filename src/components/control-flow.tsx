@@ -10,7 +10,7 @@ type Props = {
     children: React.ReactNode
 }
 
-function Flow({ children }: Props) {
+export function Flow({ children }: Props) {
     let show: React.ReactNode;
     let otherwise: React.ReactNode;
 
@@ -34,5 +34,3 @@ function Flow({ children }: Props) {
 Flow.If = (props: Props & { condition: boolean }) => props.children
 Flow.ElseIf = (props: Props & { condition: boolean }) => props.children
 Flow.Else = (props: Props) => props.children
-
-export default Flow

@@ -10,14 +10,6 @@ type AccordionStoreType = {
     onSelectAccordion: (key: string) => void
 }
 
-type PopoverStoreType = {
-    popover: string;
-    onSelectPopover: (key: string) => void
-}
-
-const PopoverContext =
-    React.createContext<PopoverStoreType>({} as PopoverStoreType)
-
 const AccordionContext =
     React.createContext<AccordionStoreType>({} as AccordionStoreType)
 
@@ -34,7 +26,7 @@ Menu.displayName = "Menu"
 export const MenuItem = React.forwardRef<HTMLLIElement, React.ComponentPropsWithoutRef<"li">>(({ className, ...props }, refs) => {
 
     return (
-        <li ref={refs} className={merge("relative h-max", className)} {...props} role="menu-item" tabIndex={-1} />
+        <li ref={refs} className={merge("relative h-max", className)} {...props} aria-label="menu item" tabIndex={-1} />
     )
 })
 

@@ -12,8 +12,17 @@
   }
 
   .container {
-    @apply  max-w-[1920px] mx-auto px-5 md:px-14 xl:px-28
+    @apply max-w-[1920px] mx-auto px-5 md:px-14 xl:px-28
   }
+
+
+  .container2nd {
+    @apply max-w-[1440px] mx-auto px-5 md:px-14 xl:px-28
+  }
+}
+
+.navbar-shadow {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 20px;
 }
 
 .popover-shadow {
